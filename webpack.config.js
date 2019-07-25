@@ -5,7 +5,7 @@ module.exports = {
   // Entry point for export
   entry: './src/index.jsx',
   // Output type
-  mode: 'development',
+  mode: 'production',
   output: {
     // Specify filename and path for output
     filename: 'bundle.js',

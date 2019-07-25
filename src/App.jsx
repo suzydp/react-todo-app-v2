@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        <h1 class="title">React Todo App</h1>
+        <h1>Hello, {this.props.name}</h1>
       </div>
     )
   }

@@ -20,6 +20,8 @@ class TodoForm extends React.Component {
     event.preventDefault();
     // Appear result when the data successfully sent
     console.log(this.state.inputValue);
+    // send the data to props
+    this.props.addTodo(this.state.inputValue)
   }
 
   render() {

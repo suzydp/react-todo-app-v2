@@ -8,8 +8,15 @@ class TodoFilter extends Component {
   };
 
   handleFilter = (filter) => {
+
+    const { clickFilter } = this.props;
+
     this.setState({
       activeFilter: filter,
+    }, () => {
+      // to enable filter
+      const { activeFilter } = this.state;
+      clickFilter(activeFilter);
     });
   }
 

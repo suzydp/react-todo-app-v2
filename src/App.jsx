@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoList from './components/TodoList';
+import TodoFilter from './components/TodoFilter';
 import TodoItem from './components/TodoItem';
 import TodoForm from './components/TodoForm';
 
@@ -10,7 +10,7 @@ class App extends Component {
         <h1>Hello from React todo app</h1>
         <TodoForm />
         <TodoItem />
-        <TodoList />
+        <TodoFilter />
       </div>
     )
   }

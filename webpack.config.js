@@ -5,7 +5,7 @@ module.exports = {
   // Entry point for export
   entry: './src/index.jsx',
   // Output type
-  mode: 'production',
+  mode: 'development',
   output: {
     // Specify filename and path for output
     filename: 'bundle.js',
@@ -15,6 +15,7 @@ module.exports = {
   devServer: {
     contentBase: 'public',
     port: 8888,
+    inline: true
   },
   module: {
     rules: [

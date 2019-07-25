@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import './app.scss';
+import TodoList from './components/TodoList';
+import TodoItem from './components/TodoItem';
+import TodoForm from './components/TodoForm';
 
 class App extends Component {
   render() {
     return (
-      <div id="main">
-        <h1>Hello, {this.props.name}</h1>
+      <div>
+        <h1>Hello from React todo app</h1>
+        <TodoForm />
+        <TodoItem />
+        <TodoList />
       </div>
     )
   }
